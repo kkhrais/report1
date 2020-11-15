@@ -1,0 +1,98 @@
+/*reset*/
+html{
+    font-size: 62.5%;
+    background: #222 url('../asset/wallpaper.jpg') no-repeat fixed center center / cover; 
+    scroll-behavior: smooth; 
+}
+
+body{
+    font: 1.6rem;
+}
+
+h1,h2,ol,nav,p,a{
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+
+}
+
+/*fin de reset*/
+
+*{box-sizing: border-box;}
+header, main{
+    max-width: 80rem; 
+    border: 0.1rem solid transparent;
+    margin: 0 auto;  
+    background-color:rgba(255,255,255,0.8);
+    font-size: large;
+    
+}
+header{
+    margin: 2rem auto 0; /*top = 2rem   la droit et gauche = auto    bottom = 0*/
+    padding: .5rem;/* pareil comme 0.5*/
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+header h1{
+    background-color: var(--color-h2);
+    margin: 1rem auto 1rem;
+    padding: 1rem;
+    color: aliceblue;
+}
+header img{
+    margin: 2rem auto 0;
+    display: block;
+    width: 100%;
+}
+section p{
+    padding-left: 3.0rem; /*pour que les chiffres entrer dans le block*/
+    margin: 1.0rem 0;
+}
+section h2{
+    background-color: var(--color-h2);
+    margin: 1rem auto 1rem;
+    padding: 1rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    color: aliceblue;
+    text-transform: capitalize;
+    line-height: 4.5rem;
+    text-align: justify;
+}
+section h2::after{
+    padding-left: .8rem;
+    content: '\203A';
+    font-weight: bold;
+    font-size: xx-large;
+    
+}
+:root{
+    --color-h2: #3598db;
+}
+nav ol, section:last-child ol{
+    padding-left: 3.0rem; /*pour que les chiffres entrer dans le block*/
+    margin: 1.0rem 0;
+    text-transform: capitalize;
+    line-height: 4.5rem;
+    text-align: justify;
+}
+section:nth-child(2n+0) ol{
+    padding-left: 3.0rem; /*pour que les chiffres entrer dans le block*/
+    margin: 1.0rem 0;
+}
+
+section img{
+    display: block; /* pour ajuster l'image */
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+    font-size: xx-large;
+    color: blue;
+    
+}
